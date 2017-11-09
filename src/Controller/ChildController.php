@@ -3,7 +3,7 @@
 namespace Boysrus\Controller;
 
 use Boysrus\Model\GiftManager;
-
+use Boysrus\Model\Gifts;
 
 class ChildController extends Controller
 {
@@ -34,12 +34,12 @@ class ChildController extends Controller
 
     public function chooseGift()
     {
-
-        $gift='';
         if (isset($_POST['submitGift'])) {
             var_dump($_POST);
+            $gift = new Gifts;
+            $gift->setName($_POST['giftWanted']);
             $giftManager = new GiftManager();
-            $gift = $giftManager->insert($_POST['giftWanted']);
+            $gift = $giftManager->insert($gift);
         }
 
         return $this->twig->render('Children/childrenRequest.html.twig', [

@@ -17,8 +17,8 @@ class GiftManager extends EntityManager
      */
     public function insert(Gifts $gift)
     {
-        $req = "INSERT INTO" . self::TABLE . "
-                (name, valid) 
+        $req = "INSERT INTO " . self::TABLE . "
+                (name, valid)
                 VALUES (:gift, 1)";
         $statement = $this->pdo->prepare($req);
         $statement->bindValue('gift', $gift->getName(), \PDO::PARAM_STR);
