@@ -5,6 +5,14 @@
 .alignLeft {
     text-align: left;
 }
+
+/*Logged child*/
+
+.headingLogged {
+    margin: 50px 0;
+}
+
+
 /*navbar*/
 .navbar-logo {
     position: fixed;

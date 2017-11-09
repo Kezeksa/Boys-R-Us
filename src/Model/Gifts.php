@@ -17,9 +17,9 @@ class Gifts
     private $id;
 
     /**
-     * @var Text
+     * @var String
      */
-    private $gift;
+    private $name;
 
     /**
      * @var Integer
@@ -50,20 +50,20 @@ class Gifts
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getGift()
+    public function getName()
     {
-        return $this->gift;
+        return $this->name;
     }
 
     /**
-     * @param mixed $gift
-     * @return Gifts
+     * @param $name
+     * @return $this
      */
-    public function setGift($gift)
+    public function setName($name)
     {
-        $this->gift = $gift;
+        $this->name = $name;
         return $this;
     }
 

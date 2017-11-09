@@ -24,7 +24,6 @@ if ($route == 'home') {
     echo $childController->createNewAccount();
 
 } elseif ($route == 'childlogged') {
-    // models of one category
     $modelController = new \Boysrus\Controller\ChildController();
     echo $modelController->chooseGift();
 
