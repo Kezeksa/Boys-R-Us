@@ -9,7 +9,10 @@
 namespace Boysrus\Controller;
 
 
-class HomeController
+class HomeController extends Controller
 {
-
+    public function showHome()
+    {
+        return $this->twig->render('Home/home.html.twig');
+    }
 }

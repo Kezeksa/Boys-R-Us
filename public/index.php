@@ -3,10 +3,10 @@
 require "../vendor/autoload.php";
 require '../connect.php';
 
-// session starting for dynamic everywhere you want message
+/*// session starting for dynamic everywhere you want message
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}
+}*/
 
 // routeur
 if (!empty($_GET['route'])) {

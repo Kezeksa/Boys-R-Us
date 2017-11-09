@@ -19,6 +19,10 @@ class ComposerStaticInitedf8c2f81c74a997af0b14d508b1e70d
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
         ),
+        'B' => 
+        array (
+            'Boysrus\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -29,6 +33,10 @@ class ComposerStaticInitedf8c2f81c74a997af0b14d508b1e70d
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Boysrus\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
