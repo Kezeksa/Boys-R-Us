@@ -1,0 +1,11 @@
+.navbar-logo {
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.navbar-background {
+    position: fixed;
+    margin-top: 0;
+    width: 100vw;
+}
