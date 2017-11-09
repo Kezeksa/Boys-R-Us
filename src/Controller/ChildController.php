@@ -9,7 +9,25 @@
 namespace Boysrus\Controller;
 
 
-class ChildController
+class ChildController extends Controller
 {
+    public function createNewAccount()
+    {
+        if (!empty($_POST['submitForm'])) {
+
+            header('Location: ?route=childlogged');
+            exit();
+        }
+
+        return $this->twig->render('Children/childrenConnect.html.twig');
+    }
+
+    public function chooseGift()
+    {
+
+
+
+
+    }
 
 }

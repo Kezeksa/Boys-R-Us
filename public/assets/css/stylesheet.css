@@ -1,3 +1,11 @@
+/*form*/
+.textAlign {
+    text-align: center;
+}
+.alignLeft {
+    text-align: left;
+  
+/*navbar*/
 .navbar-logo {
     position: fixed;
     margin-top: 5px;
@@ -30,3 +38,4 @@
 .content {
     padding-top: 140px;
 }
+
