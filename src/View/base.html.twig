@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{% block title %}Boys'R'Us{% endblock %}</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-    </head>
-    <body>
-        {% block navbar %}
-        {% include 'header.html.twig' %}
-        {% endblock %}
-        {% block body %}{% endblock %}
+<head>
+    <title>{% block title %}Boys'R'Us{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+<body>
+{% block navbar %}
+    {% include 'header.html.twig' %}
+{% endblock %}
+{% block body %}{% endblock %}
 
-        {% include 'footer.html.twig' %}
+{% include 'footer.html.twig' %}
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/js.js"></script>
 
-    </body>
+</body>
 </html>
