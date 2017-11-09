@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+{% block title %}Connexion - Boys'R us{% endblock %}
+{% block body %}
+
+    <div class="container content textAlign">
+
+        <h1>Bonjour petit enfant, as-tu un compte ?</h1>
+        <h3>Oui ? Alors clique sur le petit bouton vert...!!!!</h3>
+
+        <button class="btn btn-success" data-toggle="collapse" data-target="#demo1"> Petit bouton vert</button>
+
+        <div id="demo1" class="collapse alignLeft">
+            <form>
+                <div class="form-group">
+                    <label for="formPseudolog" class="control-label">Pseudo</label>
+                    <input type="text" id="formPseudolog" class="form-control" name="formPseudolog" required>
+                </div>
+
+                <button type="submit" class="btn btn-warning" data-toggle="modal"
+                        data-target="#confirm-submit" name="submitForm1" value="1">
+                    Valider
+                </button>
+            </form>
+        </div>
+
+        <h3>Non ? Alors vas-y, clique sur le petit bouton bleu... :)</h3>
+
+        <button class="btn btn-info form" data-toggle="collapse" data-target="#demo">Petit bouton bleu</button>
+
+        <div id="demo" class="collapse alignLeft">
+            <form method="POST" action="">
+                <div class="form-group">
+                    <label for="FormFirstName" class="control-label">Prénom</label>
+                    <input type="text" id="FormFirstName" class="form-control" name="formFirstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formLastName" class="control-label">Nom</label>
+                    <input type="text" id="formLastName" class="form-control" name="formLastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formPseudo" class="control-label">Pseudo</label>
+                    <input type="text" id="formPseudo" class="form-control" name="formPseudo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formAge" class="control-label">Age</label>
+                    <input type="number" id="formAge" class="form-control" name="formAge" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formStreet" class="control-label">Rue</label>
+                    <input type="text" id="formStreet" class="form-control" name="formStreet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formCity" class="control-label">Ville</label>
+                    <input type="text" id="formCity" class="form-control" name="formCity" required>
+                </div>
+
+                <button type="submit" class="btn btn-success" data-toggle="modal"
+                        data-target="#confirm-submit" name="submitForm" value="1">
+                    Valider
+                </button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
