@@ -4,4 +4,38 @@
 }
 .alignLeft {
     text-align: left;
+  
+/*navbar*/
+.navbar-logo {
+    position: fixed;
+    margin-top: 5px;
+    left: calc(50vw - 250px);
+    width: 500px;
+    height: auto;
 }
+
+.navbar-img1 {
+    position: fixed;
+    margin-top: 5px;
+    left: calc(25vw - 250px);
+    height: 130px;
+}
+
+.navbar-img2 {
+    position: fixed;
+    margin-top: 5px;
+    left: calc(85vw - 250px);
+    height: 130px;
+}
+
+.navbar-background {
+    position: fixed;
+    width: 100vw;
+    height: 140px;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+.content {
+    padding-top: 140px;
+}
+
