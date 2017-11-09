@@ -3,10 +3,10 @@
 require "../vendor/autoload.php";
 require '../connect.php';
 
-/*// session starting for dynamic everywhere you want message
+// session starting for dynamic everywhere you want message
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}*/
+}
 
 // routeur
 if (!empty($_GET['route'])) {
@@ -20,9 +20,8 @@ if ($route == 'home') {
     echo $homeController->showHome();
 
 } elseif ($route == 'childhome') {
-    // simple search in name of models
-    $modelController = new \Boysrus\Controller\ChildController();
-    echo $modelController->createNewAccount();
+    $childController = new \Boysrus\Controller\ChildController();
+    echo $childController->createNewAccount();
 
 } elseif ($route == 'childlogged') {
     // models of one category

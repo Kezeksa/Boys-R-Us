@@ -1,0 +1,17 @@
+{
+    "name": "wilder9/boys-r-us",
+    "authors": [
+        {
+            "name": "Rumakashy",
+            "email": "vincent.plasson@outlook.fr"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.4"
+    },
+    "autoload" : {
+        "psr-4": {
+        "Boysrus\\": "src/"
+        }
+    }
+}

@@ -1,5 +1,5 @@
-/vendor/
+vendor/
 connect.php
 composer.json
 composer.lock
-public/assets/images/
+.idea/

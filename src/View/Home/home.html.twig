@@ -2,27 +2,33 @@
 {% block title %}Accueil - Boys'R'Us{% endblock %}
 {% block body %}
 
-    <section class="backBody">
-        <h1 class="text-center">Selectionnez votre profil: </h1>
-        <div class="styleSpacer"></div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="carousel">
-                        <div class="item a"><a href=""><img class="PicsCarousel" src="assets/images/enfants.jpg"></a>
-                        </div>
-                        <div class="item b"><a href=""><img class="PicsCarousel" src="assets/images/lutins.jpg"></a>
-                        </div>
-                        <div class="item c"><a href=""><img class="PicsCarousel" src="assets/images/santa.jpg"></a>
+
+    <div class="content">
+        <section class="backBody">
+
+            <h1 class="text-center">Selectionnez votre profil: </h1>
+            <div class="styleSpacer"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="carousel">
+                            <div class="item a"><a href="?route=childhome"><img class="PicsCarousel"
+                                                                src="assets/images/enfants.jpg"></a>
+                            </div>
+                            <div class="item b"><a href=""><img class="PicsCarousel" src="assets/images/lutins.jpg"></a>
+                            </div>
+                            <div class="item c"><a href=""><img class="PicsCarousel" src="assets/images/santa.jpg"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="next">Next</div>
-        <div class="prev">Prev</div>
+            <div class="next"><img class="traineauPics" src="assets/images/traineauG.png"></div>
+            <div class="prev"><img class="traineauPics" src="assets/images/8061.png"></div>
 
 
-    </section>
+        </section>
+    </div>
 {% endblock %}
