@@ -1,2 +1,5 @@
 /vendor/
 .idea
+connect.php
+composer.json
+composer.lock
