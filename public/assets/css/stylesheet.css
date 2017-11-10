@@ -1,8 +1,6 @@
 
-
-
 body {
-    background: url("../images/red.jpg")repeat center;
+    background: url("../images/red.jpg") repeat center;
 }
 
 .styleSpacer {
@@ -12,7 +10,7 @@ body {
 .title2 {
     margin-top: -400px;
     font-size: 6em;
-    color:#DAA520;
+    color: #DAA520;
 
 }
 
@@ -98,8 +96,8 @@ body {
     border: 2px solid #DAA520;
     border-radius: 5px;
 
-
 }
+
 .coin {
     margin-left: -470px;
     margin-top: -400px;
@@ -108,16 +106,28 @@ body {
 
 .coin2 {
     margin-top: -5px;
-    margin-left: 80%;
+    margin-left: 79%;
     width: 340px;
 }
 
 .coin3 {
     width: 350px;
-    margin-top: -900px;
+    margin-top: -580px;
     margin-left: 140px;
+    position: absolute;
+    z-index: 1;
 }
 
+.coin4 {
+    width: 38px;
+    margin-top: -463px;
+    margin-left: 310px;
+    position: absolute;
+    z-index: 2;
+    animation: rotateLeft 2s linear infinite;
+    animation-delay: 1s;
+
+}
 
 .border {
     border: 2px solid #DAA520;
@@ -130,7 +140,6 @@ body {
 }
 
 /*-----------------------------------------fin carousel-----------------------------------------*/
-
 
 @font-face {
     font-family: "Corunna";
@@ -156,6 +165,7 @@ body {
     font-size: 30px;
     margin-bottom: 25px;
 }
+
 /*form*/
 .textAlign {
     text-align: center;
@@ -209,40 +219,48 @@ label {
 
 .fingerl {
     margin-left: 488px;
-    animation:rotateLeft 3s linear infinite;
+    animation: rotateLeft 3s linear infinite;
     animation-delay: 2s;
 }
 
 @keyframes rotateLeft {
     0% {
         transform: rotate(0deg);
-    } 10% {
+    }
+    10% {
         transform: rotate(-35deg);
-    } 20% {
+    }
+    20% {
         transform: rotate(0deg);
-    } 30% {
+    }
+    30% {
         transform: rotate(-35deg);
-    } 40% {
+    }
+    40% {
         transform: rotate(0deg);
     }
 }
 
 .fingerd {
     margin-left: 69.7%;
-    animation:rotateRight 3s linear infinite;
+    animation: rotateRight 3s linear infinite;
     animation-delay: 3.5s;
 }
 
 @keyframes rotateRight {
     0% {
         transform: rotate(0deg);
-    } 10% {
+    }
+    10% {
         transform: rotate(35deg);
-    } 20% {
+    }
+    20% {
         transform: rotate(0deg);
-    } 30% {
+    }
+    30% {
         transform: rotate(35deg);
-    } 40% {
+    }
+    40% {
         transform: rotate(0deg);
     }
 }
@@ -265,6 +283,7 @@ label {
 .joed {
     margin-left: 70%;
 }
+
 /*navbar*/
 .navbar {
     z-index: 10;
@@ -296,7 +315,7 @@ label {
     position: fixed;
     width: 100vw;
     height: 140px;
-    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.75);
 }
 
 .content {
