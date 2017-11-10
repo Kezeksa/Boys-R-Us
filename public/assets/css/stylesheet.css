@@ -1,3 +1,137 @@
+
+
+
+body {
+    background: url("../images/red.jpg") no-repeat center;
+}
+
+.styleSpacer {
+    height: 5vh;
+}
+
+.title2 {
+    margin-top: -400px;
+    font-size: 6em;
+    color:#DAA520;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 250px;
+    height: 190px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 250px;
+    height: 250px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+
+}
+
+.a {
+    transform: rotateY(120deg) translateZ(400px);
+    background: black;
+
+}
+
+.b {
+    transform: rotateY(240deg) translateZ(400px);
+    background: black;
+
+}
+
+.c {
+    transform: rotateY(360deg) translateZ(400px);
+    background: black;
+
+}
+
+.next, .prev {
+    color: #444;
+    position: absolute;
+    top: 530px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: box-shadow 0.1s, top 0.1s;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+}
+
+.next:active, .prev:active {
+    top: 530px;
+    box-shadow: 0 1px 0 #999;
+}
+
+.next {
+    right: 1em;
+    margin-right: 280px;
+}
+
+.prev {
+    left: 1em;
+    margin-left: 280px;
+}
+
+.PicsCarousel {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #DAA520;
+    border-radius: 5px;
+
+
+}
+.coin {
+    margin-left: -470px;
+    margin-top: -400px;
+    width: 90%;
+}
+
+.coin2 {
+    margin-top: -5px;
+    margin-left: 80%;
+    width: 340px;
+}
+
+.coin3 {
+    width: 350px;
+    margin-top: -900px;
+    margin-left: 140px;
+}
+
+
+.border {
+    border: 2px solid #DAA520;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.traineauPics {
+    width: 150px;
+}
+
+/*-----------------------------------------fin carousel-----------------------------------------*/
+
+
 @font-face {
     font-family: "Corunna";
     src: url('../fonts/PMMM-Corunna.otf');
