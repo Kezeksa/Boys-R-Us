@@ -1,7 +1,26 @@
 {% extends 'base.html.twig' %}
 {% block title %}Page perso - Boys'R us{% endblock %}
 {% block body %}
+<img class="joe joel" src="assets/images/joel.png">
+<img class="joe joed" src="assets/images/joed.png">
+<div class="connectbg">
+    <div class="container content">
+        <h2 class="textAlign headingLogged">Salut {{ session['formPseudo'] ? session['formPseudo'] }}{{ session['formPseudo1'] ? session['formPseudo1'] }} !!!</h2>
+        <h3>A présent, choisis tes cadeaux !!! Wouhouuuu !!</h3>
 
-    <h2>Salut {{  }}</h2>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="giftWanted" class="control-label">Pour Noël, je veux :</label>
+                <input type="text" id="giftWanted" name="giftWanted" class="form-control" required>
+            </div>
 
+            <button type="submit" class="btn btn-info" name="submitGift">Ajouter</button>
+        </form>
+    </div>
+    <ul>
+        {% for gift in gifts %}
+        <li> {{ gift.name }} </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}

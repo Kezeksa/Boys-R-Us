@@ -2,7 +2,7 @@
 
 
 body {
-    background: url("../images/red.jpg") no-repeat center;
+    background: url("../images/red.jpg")repeat center;
 }
 
 .styleSpacer {
@@ -245,6 +245,25 @@ label {
     } 40% {
         transform: rotate(0deg);
     }
+}
+
+/* request */
+.headingLogged {
+    margin: 50px 0;
+}
+
+.joe {
+    position: fixed;
+    margin-top: 150px;
+    z-index: 2;
+}
+
+.joel {
+    margin-left: 5px;
+}
+
+.joed {
+    margin-left: 70%;
 }
 /*navbar*/
 .navbar {
