@@ -1,19 +1,127 @@
+@font-face {
+    font-family: "Corunna";
+    src: url('../fonts/PMMM-Corunna.otf');
+}
+
+@font-face {
+    font-family: "ComingSoon";
+    src: url('../fonts/ComingSoon.ttf');
+}
+
+* {
+    font-family: "ComingSoon";
+}
+
+.title {
+    font-size: 60px;
+    font-family: "Corunna", serif;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
 /*form*/
 .textAlign {
     text-align: center;
 }
+
 .alignLeft {
     text-align: left;
 }
 
-/*Logged child*/
+.connect {
+    position: relative;
+    z-index: 3;
+}
+
+.connectbg {
+    position: fixed;
+    height: calc(100vh - 140px);
+    background: url("../images/connectbg.jpeg");
+    background-size: 100% 100%;
+    margin-top: 70px;
+    width: 100vw;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    background: white;
+}
+
+.hotesse {
+    position: fixed;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+.hotessel {
+    margin-left: 20px;
+}
+
+.hotessed {
+    margin-left: 70%;
+}
+
+.finger {
+    position: fixed;
+    margin-top: 507px;
+    z-index: 1;
+}
+
+.fingerl {
+    margin-left: 488px;
+    animation:rotateLeft 3s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(0deg);
+    } 10% {
+        transform: rotate(-35deg);
+    } 20% {
+        transform: rotate(0deg);
+    } 30% {
+        transform: rotate(-35deg);
+    } 40% {
+        transform: rotate(0deg);
+    }
+}
+
+.fingerd {
+    margin-left: 69.7%;
+    animation:rotateRight 3s linear infinite;
+    animation-delay: 3.5s;
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(0deg);
+    } 10% {
+        transform: rotate(35deg);
+    } 20% {
+        transform: rotate(0deg);
+    } 30% {
+        transform: rotate(35deg);
+    } 40% {
+        transform: rotate(0deg);
+    }
+}
 
 .headingLogged {
     margin: 50px 0;
 }
 
-
 /*navbar*/
+.navbar {
+    z-index: 10;
+}
+
 .navbar-logo {
     position: fixed;
     margin-top: 5px;
@@ -32,7 +140,7 @@
 .navbar-img2 {
     position: fixed;
     margin-top: 5px;
-    left: calc(85vw - 250px);
+    left: calc(90vw - 250px);
     height: 130px;
 }
 
@@ -44,6 +152,5 @@
 }
 
 .content {
-    padding-top: 140px;
+    padding-top: 180px;
 }
-
