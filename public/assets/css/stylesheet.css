@@ -325,3 +325,30 @@ label {
 .content {
     padding-top: 180px;
 }
+
+.daronbg {
+        position: fixed;
+        z-index: 1;
+        height: calc(100vh - 140px);
+        background: url("../images/daron.jpg");
+        background-size: 100% 100%;
+        margin-top: 70px;
+        width: 100vw;
+}
+
+.emperor {
+    margin-left: 28%;
+    z-index: 2;
+    position: fixed;
+}
+
+.papa {
+    position: fixed;
+    z-index: 5;
+}
+
+.titleSanta {
+    font-size: 3em;
+    color: white;
+    text-sahdow: 2px 2px 1px black;
+}

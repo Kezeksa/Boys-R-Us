@@ -1,5 +1,11 @@
-{% block content %}
-
+{% extends 'base.html.twig' %}
+{% block title %}Daron Noël - Boys'R us{% endblock %}
+{% block body %}
+        <div class="daronbg">
+    </div>
+            <div class="content">
+                <img class="emperor" src="assets/images/emperorsanta.png">
+                <div class="papa">
     <h1>Pays</h1>
     {% for city in cities %}
         <ul>
@@ -8,5 +14,6 @@
             </li>
         </ul><br />
     {% endfor %}
-
+</div>
+</div>
 {% endblock %}
