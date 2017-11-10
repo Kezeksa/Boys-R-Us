@@ -34,32 +34,7 @@ class Children
     /**
      * @var Varchar
      */
-    private $street;
-
-    /**
-     * @var Varchar
-     */
-    private $city;
-
-    /**
-     * @var Varchar
-     */
-    private $country;
-
-    /**
-     * @var Varchar
-     */
     private $username;
-
-    /**
-     * @var Boolean
-     */
-    private $valid;
-
-    /**
-     * @var Integer
-     */
-    private $delivered;
 
     /**
      * @return mixed
@@ -136,60 +111,6 @@ class Children
     /**
      * @return mixed
      */
-    public function getStreet()
-    {
-        return $this->street;
-    }
-
-    /**
-     * @param mixed $street
-     * @return Children
-     */
-    public function setStreet($street)
-    {
-        $this->street = $street;
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCity()
-    {
-        return $this->city;
-    }
-
-    /**
-     * @param mixed $city
-     * @return Children
-     */
-    public function setCity($city)
-    {
-        $this->city = $city;
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCountry()
-    {
-        return $this->country;
-    }
-
-    /**
-     * @param mixed $country
-     * @return Children
-     */
-    public function setCountry($country)
-    {
-        $this->country = $country;
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getUsername()
     {
         return $this->username;
@@ -202,42 +123,6 @@ class Children
     public function setUsername($username)
     {
         $this->username = $username;
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getValid()
-    {
-        return $this->valid;
-    }
-
-    /**
-     * @param mixed $valid
-     * @return Children
-     */
-    public function setValid($valid)
-    {
-        $this->valid = $valid;
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDelivered()
-    {
-        return $this->delivered;
-    }
-
-    /**
-     * @param mixed $delivered
-     * @return Children
-     */
-    public function setDelivered($delivered)
-    {
-        $this->delivered = $delivered;
         return $this;
     }
 }

@@ -1,0 +1,12 @@
+{% block content %}
+
+    <h1>Pays</h1>
+    {% for country in countries %}
+        <ul>
+            <li>
+                <a href="index.php?route=santacities&id={{ country.id }}">{{ country.name }}</a>
+            </li>
+        </ul><br />
+    {% endfor %}
+
+{% endblock %}
