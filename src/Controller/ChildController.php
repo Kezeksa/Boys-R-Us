@@ -34,9 +34,8 @@ class ChildController extends Controller
 
     public function chooseGift()
     {
+        $gift = new Gifts;
         if (isset($_POST['submitGift'])) {
-            var_dump($_POST);
-            $gift = new Gifts;
             $gift->setName($_POST['giftWanted']);
             $giftManager = new GiftManager();
             $gift = $giftManager->insert($gift);
@@ -44,7 +43,7 @@ class ChildController extends Controller
 
         return $this->twig->render('Children/childrenRequest.html.twig', [
             'session' => $_SESSION,
-            'gift' => $gift,
+            'gifts' => $gift,
         ]);
     }
 }

@@ -15,5 +15,9 @@
             <button type="submit" class="btn btn-info" name="submitGift">Ajouter</button>
         </form>
     </div>
-
+    <ul>
+        {% for gift in gifts %}
+        <li> {{ gift.name }} </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
