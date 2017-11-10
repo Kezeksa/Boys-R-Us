@@ -14,7 +14,7 @@ body {
 
 }
 
-.container {
+.accueil2 {
     margin: 0 auto;
     width: 250px;
     height: 190px;
@@ -106,7 +106,7 @@ body {
 
 .coin2 {
     margin-top: -5px;
-    margin-left: 79%;
+    margin-left: 82%;
     width: 340px;
 }
 
@@ -137,6 +137,10 @@ body {
 
 .traineauPics {
     width: 150px;
+}
+
+.accueil {
+    padding-top: 180px;
 }
 
 /*-----------------------------------------fin carousel-----------------------------------------*/
