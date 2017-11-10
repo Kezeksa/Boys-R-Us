@@ -41,15 +41,15 @@ if ($route == 'home') {
 
 } elseif ($route == 'santahome') {
     // go to mentions page
-    $homeController = new \Boysrus\Controller\SantaController();
-    echo $homeController->showcountries();
+    $homeController = new \Boysrus\Controller\HomeController();
+    echo $homeController->showCountries();
 
 } elseif ($route == 'santacities') {
-    $modelController = new \Boysrus\Controller\SantaController();
-    echo $modelController->showcities();
+    $modelController = new \Boysrus\Controller\HomeController();
+    echo $modelController->showCities();
 
 } elseif ($route == 'santafinalorders') {
-    $modelController = new \Boysrus\Controller\SantaController();
+    $modelController = new \Boysrus\Controller\HomeController();
     echo $modelController->showordersbycity();
 
 } else {

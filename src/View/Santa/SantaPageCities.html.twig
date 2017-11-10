@@ -1,0 +1,12 @@
+{% block content %}
+
+    <h1>Pays</h1>
+    {% for city in cities %}
+        <ul>
+            <li>
+                <span>{{ city.name }}</span>
+            </li>
+        </ul><br />
+    {% endfor %}
+
+{% endblock %}
