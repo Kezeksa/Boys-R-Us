@@ -25,8 +25,13 @@ class GiftManager extends EntityManager
         $statement->execute();
     }
 
-    public function findGifts()
+    public function findGifts($child)
     {
-
+        $req = "SELECT name
+                FROM " . self::TABLE ."
+                WHERE child_id=:child_id ";
+        $statement = $this->pdo->prepare($req);
+        $statement->bindValue('child_id', $child, \PDO::PARAM_INT);
+        return $statement->fetchAll(\PDO::FETCH_CLASS, self::CLASSREF);
     }
 }

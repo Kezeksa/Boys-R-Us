@@ -47,7 +47,7 @@ class Children
     private $country;
 
     /**
-     * @var Varchar
+     * @var String
      */
     private $username;
 

@@ -3,7 +3,7 @@
 {% block body %}
 
     <div class="container content">
-        <h2 class="textAlign headingLogged">Salut {{ session['formPseudo'] ? session['formPseudo'] }}{{ session['formPseudo1'] ? session['formPseudo1'] }} !!!</h2>
+        <h2 class="textAlign headingLogged title">Salut {{ session['formPseudo'] ? session['formPseudo'] }}{{ session['formPseudo1'] ? session['formPseudo1'] }} !!!</h2>
         <h3>A présent, choisis tes cadeaux !!! Wouhouuuu !!</h3>
 
         <form method="POST" action="">
@@ -16,7 +16,7 @@
         </form>
     </div>
     <ul>
-        {% for gift in gifts %}
+        {% for gift in giftByChild %}
         <li> {{ gift.name }} </li>
         {% endfor %}
     </ul>
